@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:blackgene="http://schemas.android.com/apk/res/cn.blackgene.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_setting_title"
+        android:layout_width="fill_parent"
+        android:layout_height="65dip"
+        android:background="#CCCCCC"
+        android:gravity="center"
+        android:text="系统设置"
+        android:textColor="#003399"
+        android:textSize="30sp" />
+
+    <cn.blackgene.mobilesafe.ui.SettingItemView
+        android:id="@+id/siv_setting_checkupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        blackgene:desc_off="自动检查升级已关闭"
+        blackgene:desc_on="自动检查升级已开启"
+        blackgene:title="设置是否自动检查升级" >
+    </cn.blackgene.mobilesafe.ui.SettingItemView>
+
+</LinearLayout>

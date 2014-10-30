@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_home_title"
+        android:layout_width="fill_parent"
+        android:layout_height="65dip"
+        android:background="#3E4142"
+        android:gravity="center"
+        android:text="卫士中心"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <cn.blackgene.mobilesafe.ui.MarqueeTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="最新的手机卫士，快来下载啊，下载送好吃的，最新的手机卫士，快来下载啊，下载送好吃的"
+        android:textSize="18sp" />
+
+    <GridView
+        android:id="@+id/gv_home_functions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:numColumns="3"
+        android:paddingTop="10dip" />
+
+</LinearLayout>
